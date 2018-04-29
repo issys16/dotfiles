@@ -29,7 +29,7 @@ formulas=(
     tig
     python3
     lua
-    "vim --with-lua"
+    "vim --with-lua --with-python3"
     ricty
     markdown
     ssh-copy-id
@@ -45,6 +45,12 @@ for formula in "${formulas[@]}"; do
     brew install $formula || brew upgrade $formula
     echo ""
 done
+
+echo "---------------------------"
+echo "installing neovim"
+echo "---------------------------"
+pip3 install --upgrade neovim
+echo ""
 
 casks=(
     iterm2

@@ -10,6 +10,10 @@ for f in .??*; do
     ln -snfv ~/dotfiles/"$f" ~/
 done
 
+# neovim
+ln -snfv ~/.vim ~/dotfiles/nvim/
+ln -snfv ~/.vimrc ~/dotfiles/nvim/init.vim
+
 cat << END
 
 **************************************************

@@ -32,6 +32,13 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval $(thefuck --alias)
 
 ##########################
+# neovim
+##########################
+export XDG_CONFIG_HOME=$HOME/dotfiles
+alias vi="nvim"
+alias vim="nvim"
+
+##########################
 # custom function
 ##########################
 function ph() {
