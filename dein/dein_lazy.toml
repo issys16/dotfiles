@@ -1,1 +1,12 @@
-/Users/issy_s16/.dein_lazy.toml
+[[plugins]]
+repo   = 'Shougo/unite.vim'
+
+# unite.vim を読み込んだら一緒に読み込む
+[[plugins]]
+repo      = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+# 特定のコマンドを打ったら読み込む
+[[plugins]]
+repo      = 'thinca/vim-prettyprint'
+on_cmd    = ['PP', 'PrettyPrint']

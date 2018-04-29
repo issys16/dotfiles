@@ -11,8 +11,8 @@ for f in .??*; do
 done
 
 # neovim
-ln -snfv ~/dotfiles/nvim/ ~/.vim 
-ln -snfv ~/dotfiles/nvim/init.vim ~/.vimrc 
+ln -snfv ~/.vim ~/dotfiles/nvim/ 
+ln -snfv ~/.vimrc ~/dotfiles/nvim/init.vim
 
 # dein.vim
 ln -snfv ~/dotfiles/dein/dein.toml ~/.dein.toml
