@@ -1,10 +1,3 @@
-#!/bin/bash
-set -u
-
-# 実行場所のディレクトリを取得
-THIS_DIR=$(cd $(dirname $0); pwd)
-
-cd $THIS_DIR
 git submodule init
 git submodule update
 
