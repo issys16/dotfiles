@@ -14,6 +14,10 @@ done
 ln -snfv ~/.vim ~/dotfiles/nvim/
 ln -snfv ~/.vimrc ~/dotfiles/nvim/init.vim
 
+# dein.vim
+ln -snfv ~/.dein.toml ~/dotfiles/dein/dein.toml
+ln -snfv ~/.dein_lazy.toml ~/dotfiles/dein/dein_lazy.toml
+
 cat << END
 
 **************************************************

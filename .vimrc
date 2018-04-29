@@ -11,27 +11,46 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-call dein#begin(expand('~/.vim/dein'))
+if dein#load_state(s:dein_dir)
+  call dein#begin(expand('~/.vim/dein'))
 
-call dein#add('Shougo/dein.vim')
-call dein#add('NLKNguyen/papercolor-theme')
-call dein#add('scrooloose/nerdtree')
-call dein#add('Yggdroot/indentLine')
-call dein#add('itchyny/lightline.vim')
-call dein#add('Shougo/deoplete.nvim')
+  let s:toml      = '~/.dein.toml'
+  let s:lazy_toml = '~/.dein_lazy.toml'
 
-call dein#end()
-call dein#save_state()
+  call dein#load_toml(s:toml,      {'lazy': 0})
+  call dein#load_toml(s:lazy_toml, {'lazy': 1})
+
+  call dein#end()
+  call dein#save_state()
+endif
 
 if dein#check_install()
   call dein#install()
 endif
 
 " ########################
+" NERDTree
+" ########################
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+" ########################
+" gitgutter
+" ########################
+let g:gitgutter_highlight_lines = 1
+set updatetime=10
+
+" ########################
+" deoplate
+" ########################
+let g:deoplete#enable_at_startup = 1
+
+" ########################
 " ColorScheme
 " ########################
 set background=dark
 colorscheme PaperColor
+let g:airline_theme = 'papercolor'
 
 " ########################
 " Customize 
@@ -40,8 +59,3 @@ filetype plugin indent on
 syntax enable
 set nu
 set backspace=indent,eol,start
-set laststatus=2
-set showmode
-set showcmd
-set ruler
-let g:deoplete#enable_at_startup = 1
