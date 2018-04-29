@@ -118,3 +118,5 @@ export SDKMAN_DIR="/Users/issy_s16/.sdkman"
 [[ -s "/Users/issy_s16/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/issy_s16/.sdkman/bin/sdkman-init.sh"
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+eval $(thefuck --alias)
