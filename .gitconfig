@@ -4,6 +4,7 @@
 [user]
 	useConfigOnly = true
 	email = ishikura.shogo@gmail.com
+	name = Shogo Ishikura
 [color]
 	status = auto
 	diff = auto
