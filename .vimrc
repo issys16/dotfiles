@@ -16,6 +16,9 @@ call dein#begin(expand('~/.vim/dein'))
 call dein#add('Shougo/dein.vim')
 call dein#add('NLKNguyen/papercolor-theme')
 call dein#add('scrooloose/nerdtree')
+call dein#add('Yggdroot/indentLine')
+call dein#add('itchyny/lightline.vim')
+call dein#add('Shougo/neocomplete.vim')
 
 call dein#end()
 call dein#save_state()
@@ -37,3 +40,8 @@ filetype plugin indent on
 syntax enable
 set nu
 set backspace=indent,eol,start
+set laststatus=2
+set showmode
+set showcmd
+set ruler
+let g:neocomplete#enable_at_startup = 1

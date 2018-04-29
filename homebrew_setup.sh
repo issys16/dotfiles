@@ -11,7 +11,7 @@ which brew >/dev/null 2>&1 && brew update
 
 echo "ok. run brew upgrade..."
 
-brew upgrade --all
+brew upgrade
 
 formulas=(
     git
@@ -21,7 +21,7 @@ formulas=(
     openssl
     z
     colordiff
-    --without-etcdir zsh
+    "--without-etcdir zsh"
     zsh-completions
     cask
     peco
@@ -29,7 +29,7 @@ formulas=(
     tig
     python3
     lua
-    vim
+    "vim --with-lua"
     ricty
     markdown
     ssh-copy-id
@@ -37,35 +37,37 @@ formulas=(
     thefuck
 )
 
-"brew tap..."
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-brew tap homebrew/apache
-brew tap sanemat/font
-
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
     echo "---------------------------"
     echo "installing ${formula}"
     echo "---------------------------"
     brew install $formula || brew upgrade $formula
+    echo ""
 done
 
 casks=(
-    dropbox
-    google-chrome
-    slack
-    alfred
     iterm2
+    dropbox
     virtualbox
     vagrant
     vagrant-manager
+    docker
+    docker-toolbox
+    gas-mask
+    bettertouchtool
+    alfred
+    slack
+    google-chrome
 )
 
 echo "start brew cask install apps..."
 for cask in "${casks[@]}"; do
+    echo "---------------------------"
+    echo "installing ${cask}"
+    echo "---------------------------"
     brew cask install $cask
+    echo ""
 done
 
 brew cleanup
