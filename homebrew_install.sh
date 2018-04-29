@@ -21,31 +21,18 @@ formulas=(
     openssl
     z
     colordiff
-    "--without-etcdir zsh"
+    --without-etcdir zsh
     zsh-completions
-    "--with-cocoa --srgb emacs"
     cask
-    ansible
     peco
     hub
     tig
-    node
     python3
     lua
-    "vim --with-lua"
-    mysql
-    postgresql
-    sqlite
-    "php55 --homebrew-apxs"
-    httpd22
+    vim
     ricty
-    sqlite
-    composer
     markdown
-    ctags
     ssh-copy-id
-    phantomjs
-    mecab
     diff-so-fancy
     thefuck
 )
@@ -59,17 +46,18 @@ brew tap sanemat/font
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
+    echo "---------------------------"
+    echo "installing ${formula}"
+    echo "---------------------------"
     brew install $formula || brew upgrade $formula
 done
 
 casks=(
     dropbox
     google-chrome
-    google-japanese-ime
     slack
     alfred
     iterm2
-    atom
     virtualbox
     vagrant
     vagrant-manager

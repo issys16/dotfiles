@@ -8,6 +8,9 @@ cd $THIS_DIR
 git submodule init
 git submodule update
 
+# set up oh-my-zsh
+~/dotfiles/oh-my-zsh/tools/install.sh | ZSH=~/dotfiles/oh-my-zsh sh
+
 echo "start setup..."
 for f in .??*; do
     [ "$f" = ".git" ] && continue
