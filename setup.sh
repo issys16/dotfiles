@@ -11,12 +11,12 @@ for f in .??*; do
 done
 
 # neovim
-ln -snfv ~/.vim ~/dotfiles/nvim/
-ln -snfv ~/.vimrc ~/dotfiles/nvim/init.vim
+ln -snfv ~/dotfiles/nvim/ ~/.vim 
+ln -snfv ~/dotfiles/nvim/init.vim ~/.vimrc 
 
 # dein.vim
-ln -snfv ~/.dein.toml ~/dotfiles/dein/dein.toml
-ln -snfv ~/.dein_lazy.toml ~/dotfiles/dein/dein_lazy.toml
+ln -snfv ~/dotfiles/dein/dein.toml ~/.dein.toml
+ln -snfv ~/dotfiles/dein/dein_lazy.toml ~/.dein_lazy.toml
 
 cat << END
 
