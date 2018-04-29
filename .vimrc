@@ -36,3 +36,4 @@ colorscheme PaperColor
 filetype plugin indent on
 syntax enable
 set nu
+set backspace=indent,eol,start
