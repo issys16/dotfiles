@@ -53,14 +53,6 @@ colorscheme PaperColor
 let g:airline_theme = 'papercolor'
 
 " ########################
-" Customize 
-" ########################
-filetype plugin indent on
-syntax enable
-set nu
-set backspace=indent,eol,start
-
-" ########################
 " vim-cheatsheet 
 " ########################
 let g:cheatsheet#cheat_file = '~/.cheetsheet.md'
@@ -72,3 +64,30 @@ autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
 nnoremap <silent> <C-p> :PrevimOpen<CR>
 let g:vim_markdown_folding_disabled=1
+
+" ########################
+" Customize 
+" ########################
+filetype plugin indent on
+syntax enable
+set encoding=utf-8
+scriptencoding utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-boms,utf-8,euc-jp,cp932
+set fileformats=unix,dos,mac
+set ambiwidth=double
+set number
+set backspace=indent,eol,start
+set expandtab
+set tabstop=4
+set softtabstop=4
+set autoindent
+set smartindent
+set shiftwidth=4
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+set list listchars=tab:\▸\-
+set whichwrap=b,s,h,l,<,>,[,],~
+set cursorline
