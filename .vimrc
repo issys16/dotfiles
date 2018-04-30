@@ -59,3 +59,16 @@ filetype plugin indent on
 syntax enable
 set nu
 set backspace=indent,eol,start
+
+" ########################
+" vim-cheatsheet 
+" ########################
+let g:cheatsheet#cheat_file = '~/.cheetsheet.md'
+
+" ########################
+" markdown 
+" ########################
+autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
+autocmd BufRead,BufNewFile *.md  set filetype=markdown
+nnoremap <silent> <C-p> :PrevimOpen<CR>
+let g:vim_markdown_folding_disabled=1

@@ -36,3 +36,16 @@ repo = 'tpope/vim-rails'
 
 [[plugins]]
 repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'reireias/vim-cheatsheet'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
