@@ -18,6 +18,10 @@ ln -snfv ~/.vimrc ~/dotfiles/nvim/init.vim
 ln -snfv ~/dotfiles/dein/dein.toml ~/.dein.toml
 ln -snfv ~/dotfiles/dein/dein_lazy.toml ~/.dein_lazy.toml
 
+# iterm2
+ln -snfv ~/dotfiles/iterm2 ~/.iterm2
+ln -snfv ~/dotfiles/iterm2/com.googlecode.iterm2.plist ~/.iterm2/com.googlecode.iterm2.plist
+
 cat << END
 
 **************************************************
