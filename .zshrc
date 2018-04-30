@@ -4,7 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # oh-my-zsh
 ##########################
 export ZSH=~/dotfiles/oh-my-zsh
-ZSH_THEME="wedisagree"
+ZSH_THEME="kphoen"
 
 ##########################
 # zsh
