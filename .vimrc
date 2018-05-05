@@ -66,6 +66,11 @@ nnoremap <silent> <C-p> :PrevimOpen<CR>
 let g:vim_markdown_folding_disabled=1
 
 " ########################
+" quickrun 
+" ########################
+let g:quickrun_config={'*': {'split': ''}}
+
+" ########################
 " Customize 
 " ########################
 filetype plugin indent on

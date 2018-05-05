@@ -51,3 +51,9 @@ repo = 'tyru/open-browser.vim'
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'myhere/vim-nodejs-complete'
