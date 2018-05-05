@@ -96,3 +96,4 @@ set hlsearch
 set list listchars=tab:\▸\-
 set whichwrap=b,s,h,l,<,>,[,],~
 set cursorline
+set showtabline=3
