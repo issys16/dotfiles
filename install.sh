@@ -140,6 +140,8 @@ install_apps() {
         echo ""
     done
 
+    pip3 install --upgrade neovim
+
     brew cleanup
 }
 
