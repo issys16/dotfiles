@@ -17,3 +17,8 @@ eval $(thefuck --alias)
 export XDG_CONFIG_HOME=$HOME/dotfiles
 alias vi="nvim"
 alias vim="nvim"
+
+##########################
+# custom
+##########################
+alias ll="ls -l"
