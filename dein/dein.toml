@@ -1,59 +1,87 @@
 [[plugins]]
+# dein本体
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'NLKNguyen/papercolor-theme'
+# カラースキーマ
+repo = 'w0ng/vim-hybrid'
 
 [[plugins]]
+# ディレクトリのツリー表示
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
-repo = 'Yggdroot/indentLine'
+# インデント可視化
+repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
+# 補完フレームワーク
 repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
+# ステータスバーをかっこよく
 repo = 'vim-airline/vim-airline'
 
 [[plugins]]
+# vim-airline用テーマ
 repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
+# vimからgitを呼べるようにする
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
+# gitの差分をリアルタイム表示
 repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
+# tomlファイル用シンタックスハイライト
 repo = 'cespare/vim-toml'
 
 [[plugins]]
+# rubyファイル用シンタックスハイライト
 repo = 'vim-ruby/vim-ruby'
 
 [[plugins]]
+# railsファイル用シンタックスハイライト
 repo = 'tpope/vim-rails'
 
 [[plugins]]
+# slimファイル用シンタックスハイライト
 repo = 'slim-template/vim-slim'
 
 [[plugins]]
+# :Cheatでチートシートを表示できるようにする
 repo = 'reireias/vim-cheatsheet'
 
 [[plugins]]
+# mdファイル用シンタックスハイライト
 repo = 'plasticboy/vim-markdown'
 
 [[plugins]]
+# C-pでマークダウンファイルをプレビューできるようにする
 repo = 'kannokanno/previm'
 
 [[plugins]]
+# vimからURLを開けるようにする
 repo = 'tyru/open-browser.vim'
 
 [[plugins]]
+# rubyのend補完
 repo = 'tpope/vim-endwise'
 
 [[plugins]]
+# :QuickRunでvimからファイル実行できるようにする
 repo = 'thinca/vim-quickrun'
 
 [[plugins]]
+# node.js用補完プラグイン
 repo = 'myhere/vim-nodejs-complete'
+
+[[plugins]]
+# スムーズスクロールを実現する
+repo = 'yonchu/accelerated-smooth-scroll'
+
+[[plugins]]
+# ウィンドウサイズ変更をやりやすくする
+repo = 'kana/vim-submode'

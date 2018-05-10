@@ -35,9 +35,15 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " ########################
+" vim-indent-guides
+" ########################
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 2
+
+" ########################
 " gitgutter
 " ########################
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_highlight_lines = 0 "1にするとデフォルトでハイライト表示する
 set updatetime=10
 
 " ########################
@@ -49,7 +55,7 @@ let g:deoplete#enable_at_startup = 1
 " ColorScheme
 " ########################
 set background=dark
-colorscheme PaperColor
+colorscheme hybrid
 let g:airline_theme = 'papercolor'
 
 " ########################
@@ -71,6 +77,18 @@ let g:vim_markdown_folding_disabled=1
 let g:quickrun_config={'*': {'split': ''}}
 
 " ########################
+" kana/vim-submode 
+" ########################
+call submode#enter_with('winsize', 'n', '', '<C-w>>', '<C-w>>')
+call submode#enter_with('winsize', 'n', '', '<C-w><', '<C-w><')
+call submode#enter_with('winsize', 'n', '', '<C-w>+', '<C-w>-')
+call submode#enter_with('winsize', 'n', '', '<C-w>-', '<C-w>+')
+call submode#map('winsize', 'n', '', '>', '<C-w>>')
+call submode#map('winsize', 'n', '', '<', '<C-w><')
+call submode#map('winsize', 'n', '', '+', '<C-w>-')
+call submode#map('winsize', 'n', '', '-', '<C-w>+')
+
+" ########################
 " Customize 
 " ########################
 filetype plugin indent on
@@ -84,11 +102,11 @@ set ambiwidth=double
 set number
 set backspace=indent,eol,start
 set expandtab
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set autoindent
 set smartindent
-set shiftwidth=4
+set shiftwidth=2
 set incsearch
 set ignorecase
 set smartcase
@@ -97,3 +115,9 @@ set list listchars=tab:\▸\-
 set whichwrap=b,s,h,l,<,>,[,],~
 set cursorline
 set showtabline=3
+
+" ########################
+" Key Mappings 
+" ########################
+map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
+map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
