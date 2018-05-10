@@ -135,9 +135,3 @@ set display=lastline
 set pumheight=10
 set showmatch
 set matchtime=1
-
-" ########################
-" Key Mappings 
-" ########################
-map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
-map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
