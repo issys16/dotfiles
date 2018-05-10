@@ -38,7 +38,12 @@ let NERDTreeShowHidden=1
 " vim-indent-guides
 " ########################
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors=0
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=darkgray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=gray
+
 
 " ########################
 " gitgutter
@@ -55,7 +60,7 @@ let g:deoplete#enable_at_startup = 1
 " ColorScheme
 " ########################
 set background=dark
-colorscheme hybrid
+colorscheme iceberg
 let g:airline_theme = 'papercolor'
 
 " ########################

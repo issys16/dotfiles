@@ -3,8 +3,12 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+# Unite
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
 # カラースキーマ
-repo = 'w0ng/vim-hybrid'
+repo = 'flazz/vim-colorschemes'
 
 [[plugins]]
 # ディレクトリのツリー表示
