@@ -41,9 +41,20 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors=0
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=darkgray
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=gray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 
+" ########################
+" syntastic
+" ########################
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ########################
 " gitgutter
@@ -61,7 +72,6 @@ let g:deoplete#enable_at_startup = 1
 " ########################
 set background=dark
 colorscheme iceberg
-let g:airline_theme = 'papercolor'
 
 " ########################
 " vim-cheatsheet 
@@ -116,10 +126,15 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-set list listchars=tab:\▸\-
+set list
+set listchars=eol:¬,tab:▸\ 
 set whichwrap=b,s,h,l,<,>,[,],~
 set cursorline
 set showtabline=3
+set display=lastline
+set pumheight=10
+set showmatch
+set matchtime=1
 
 " ########################
 " Key Mappings 

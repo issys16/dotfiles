@@ -89,3 +89,11 @@ repo = 'yonchu/accelerated-smooth-scroll'
 [[plugins]]
 # ウィンドウサイズ変更をやりやすくする
 repo = 'kana/vim-submode'
+
+[[plugins]]
+# 汎用シンタックスチェッカー
+repo = 'vim-syntastic/syntastic'
+
+[[plugins]]
+# 全角スペース可視化
+repo = 'thinca/vim-zenspace'
