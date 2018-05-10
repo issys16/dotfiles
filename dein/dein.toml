@@ -3,10 +3,6 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-# Unite
-repo = 'Shougo/unite.vim'
-
-[[plugins]]
 # カラースキーマ
 repo = 'flazz/vim-colorschemes'
 

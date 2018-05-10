@@ -1,10 +1,5 @@
 [[plugins]]
-repo   = 'Shougo/unite.vim'
-
-# unite.vim を読み込んだら一緒に読み込む
-[[plugins]]
-repo      = 'Shougo/neomru.vim'
-on_source = ['unite.vim']
+repo   = 'Shougo/denite.nvim'
 
 # 特定のコマンドを打ったら読み込む
 [[plugins]]
