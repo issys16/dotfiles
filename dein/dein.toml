@@ -97,3 +97,7 @@ repo = 'thinca/vim-zenspace'
 [[plugins]]
 # emmet
 repo = 'mattn/emmet-vim'
+
+[[plugins]]
+# 閉じ括弧を自動で挿入
+repo = 'Townk/vim-autoclose'
