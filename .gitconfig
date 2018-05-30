@@ -1,6 +1,7 @@
 [core]
 	editor = nvim
 	preloadindex = true
+	pager = LESSCHARSET=utf-8 less
 [user]
 	useConfigOnly = true
 	email = ishikura.shogo@gmail.com
