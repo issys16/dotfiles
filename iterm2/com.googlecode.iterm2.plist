@@ -695,6 +695,10 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>0A63707B-A823-499D-BCFD-5A373B15F40B</string>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
+	<key>HideTab</key>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -765,9 +769,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>157 354 796 473 0 0 1440 877 </string>
+	<string>274 365 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 24 1440 853 0 0 1440 877 </string>
+	<string>0 23 1440 854 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1391,6 +1395,8 @@
 			<string>MonacoForPowerline 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
+			<key>Prevent Opening in a Tab</key>
+			<false/>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -1398,7 +1404,7 @@
 			<key>Rows</key>
 			<integer>50</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
@@ -1458,7 +1464,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>2</integer>
+			<integer>5</integer>
 			<key>Working Directory</key>
 			<string>/Users/issy_s16</string>
 		</dict>
@@ -1535,11 +1541,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-07T16:51:56Z</date>
+	<date>2018-05-23T21:05:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
 	<false/>
+	<key>TabStyle</key>
+	<integer>0</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>WordCharacters</key>
