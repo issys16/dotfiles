@@ -14,8 +14,7 @@ repo = 'scrooloose/nerdtree'
 # インデント可視化
 repo = 'nathanaelkane/vim-indent-guides'
 
-[[plugins]]
-# 補完フレームワーク
+[[plugins]] # 補完フレームワーク
 repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
@@ -77,10 +76,6 @@ repo = 'thinca/vim-quickrun'
 [[plugins]]
 # node.js用補完プラグイン
 repo = 'myhere/vim-nodejs-complete'
-
-[[plugins]]
-# スムーズスクロールを実現する
-repo = 'yonchu/accelerated-smooth-scroll'
 
 [[plugins]]
 # ウィンドウサイズ変更をやりやすくする

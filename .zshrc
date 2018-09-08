@@ -1,4 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.pyenv/shims:$PATH
+export PATH="$PATH:`yarn global bin`"
 
 ##########################
 # oh-my-zsh

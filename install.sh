@@ -4,7 +4,6 @@ setup_mac() {
         echo "Setup for Mac"
         install_homebrew
         install_apps
-        install_cask_apps
     fi
 }
 
@@ -129,6 +128,8 @@ install_apps() {
     ssh-copy-id
     diff-so-fancy
     thefuck
+    bat
+    rg
     )
 
     echo "start brew install apps..."
@@ -143,34 +144,6 @@ install_apps() {
     pip3 install --upgrade neovim
 
     brew cleanup
-}
-
-install_cask_apps() {
-    casks=(
-    iterm2
-    dropbox
-    virtualbox
-    vagrant
-    vagrant-manager
-    docker
-    docker-toolbox
-    gas-mask
-    bettertouchtool
-    alfred
-    slack
-    google-chrome
-    )
-
-    echo "start brew cask install apps..."
-    for cask in "${casks[@]}"; do
-        echo "---------------------------"
-        echo "installing ${cask}"
-        echo "---------------------------"
-        brew cask install $cask
-        echo ""
-    done
-
-    brew cask cleanup
 }
 
 setup() {
