@@ -8,6 +8,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 eval "$(pyenv init -)"
+export PATH=$HOME/.pyenv/shims:$PATH
+export PATH="$PATH:`yarn global bin`"
 
 ##########################
 # oh-my-zsh

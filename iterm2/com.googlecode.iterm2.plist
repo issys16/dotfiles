@@ -1396,6 +1396,7 @@
 			<integer>0</integer>
 			<key>Rows</key>
 			<integer>100</integer>
+			<integer>200</integer>
 			<key>Screen</key>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
