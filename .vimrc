@@ -33,12 +33,14 @@ endif
 " ########################
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+"他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる。
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q
 
 " ########################
 " vim-indent-guides
 " ########################
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
+let g:indent_guides_guide_size = 2
 let g:indent_guides_auto_colors=0
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
@@ -47,14 +49,14 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 " ########################
 " syntastic
 " ########################
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 " ########################
 " gitgutter

@@ -78,9 +78,9 @@ repo = 'thinca/vim-quickrun'
 # node.js用補完プラグイン
 repo = 'myhere/vim-nodejs-complete'
 
-[[plugins]]
+# [[plugins]]
 # スムーズスクロールを実現する
-repo = 'yonchu/accelerated-smooth-scroll'
+# repo = 'yonchu/accelerated-smooth-scroll'
 
 [[plugins]]
 # ウィンドウサイズ変更をやりやすくする

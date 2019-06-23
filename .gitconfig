@@ -4,7 +4,7 @@
 	pager = LESSCHARSET=utf-8 less
 [user]
 	useConfigOnly = true
-	email = ishikura.shogo@gmail.com
+	email = ishikura_shogo@giginc.co.jp
 	name = Shogo Ishikura
 [color]
 	status = auto
