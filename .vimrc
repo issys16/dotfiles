@@ -142,3 +142,4 @@ set display=lastline
 set pumheight=10
 set showmatch
 set matchtime=1
+set guicursor=

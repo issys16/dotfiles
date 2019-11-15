@@ -10,6 +10,7 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 eval "$(pyenv init -)"
 export PATH=$HOME/.pyenv/shims:$PATH
 export PATH="$PATH:`yarn global bin`"
+export PATH="$PATH:/Users/issy_s16/development/flutter/bin"
 
 ##########################
 # oh-my-zsh
@@ -27,9 +28,8 @@ setopt hist_ignore_dups
 
 ##########################
 # alias
-##########################
-plugins=(git)
-alias weather="curl wttr.in/Tokyo"
+########################## plugins=(git)
+alias weather="curl wttr.in/Japan"
 
 ##########################
 # rbenv
@@ -82,3 +82,5 @@ if [ -f '/Users/issy_s16/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/issy_s
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/issy_s16/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/issy_s16/google-cloud-sdk/completion.zsh.inc'; fi
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

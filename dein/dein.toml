@@ -96,3 +96,15 @@ repo = 'mattn/emmet-vim'
 [[plugins]]
 # 閉じ括弧を自動で挿入
 repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --bin'
+merged = '0'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+
+[[plugins]]
+repo = 'skanehira/translate.vim'
